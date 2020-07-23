@@ -1,2 +1,160 @@
-@import url("https://fonts.googleapis.com/css2?family=Bad+Script&family=Bitter&family=Forum&display=swap");
-/*# sourceMappingURL=style.css.map */
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html{
+    font-family: "Dosis",monospace;
+    font-size: 14px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    color: #f7fafd;
+    background-color: #79cdeb;
+}
+
+a{
+    text-decoration: none;
+    color: #e4effb;
+}
+
+ul{
+    list-style: none;
+}
+
+p{
+    font-size: 1.3em;
+}
+
+img{
+    width:100%;
+    max-width: 100%;
+    height: auto;
+}
+
+/* ヘッダーのスタイリング */
+
+header{
+    width: 100%;
+    height: 5rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.container{
+    width: 100%;
+    max-width: 90rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.nav-brand {
+    width: 7rem;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+    border-bottom: 2px solid rgba(255,255,255,.2);
+}
+
+.line1{
+    width: 20px;
+    height: 3px;
+    margin: 5px 0;
+    background: linear-gradient(
+        135deg,
+        #2960a8 0%,
+        #e4effb 100%       
+    );
+}
+
+.line2{
+    width: 30px;
+    height: 3px;
+    margin: 5px 0;
+    background: linear-gradient(
+        135deg,
+        #2960a8 0%,
+        #e4effb 100%       
+    );
+}
+
+.line3{
+    width: 20px;
+    height: 3px;
+    margin: 5px 0;
+    margin-left: 10px;
+    background: linear-gradient(
+        135deg,
+        #2960a8 0%,
+        #e4effb 100%       
+    );
+}
+
+.burger-icon{
+    cursor: pointer;
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: #81d2f0;
+    padding: 1.1rem;
+    border-radius: 0% 0% 0% 40%;
+}
+
+.profile{
+    height: 9rem;
+    width: auto;
+    border-radius: 3%;
+    display: block;
+    margin: 1.5rem 0;
+}
+
+.caption{
+    display: block;
+}
+
+.nav-list{
+    width: 22rem;
+    height: 100vh;
+    background-color: #2d597a;
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: start;
+    z-index: 990;
+    transition: all 600ms ease-in-out;
+}
+
+.nav-list.active{
+    right: 0;
+}
+
+.nav-item{
+    margin: 1.5rem 0;
+}
+
+.nav-link{
+    opacity: 0.9;
+    font-size: 1.3rem;
+    /* text-transform: uppercase; */
+    color: #e4effb;
+    letter-spacing: 2px;
+}
+
+.nav-link:hover{
+    color: silver;
+}
