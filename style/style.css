@@ -287,7 +287,7 @@ nav{
 
 .aboutme{
     width: 100%;
-    min-height: 100vh;
+    min-height: 50vh;
     max-width: 70rem;
     margin: auto;
 }
@@ -295,6 +295,7 @@ nav{
 .aboutme .container{
     display: flex;
     align-items: center;
+    text-align: center;
 }
 
 .about-txt{
@@ -304,6 +305,7 @@ nav{
 }
 
 .about-txt h2{
+    text-transform: uppercase;
     font-size: 3rem;
     margin-bottom: 2rem;
     font-weight: 200;
@@ -321,4 +323,62 @@ hr{
     background: #f7fafd;
     border: 0;
     height: 1px;
+}
+
+/* skills part */
+
+.learning-skills{
+    padding: 2rem 0;
+    max-width: 90rem;
+    margin: auto;
+}
+
+.title-head{
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.title-head h2{
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 200;
+    margin: 1rem 0;
+}
+
+.title-head p{
+    font-family: 'Sawarabi Gothic',sans-serif;
+    margin-bottom: 1rem;
+}
+
+.learning-skills{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 3rem;
+}
+
+.skill{
+    height: 15rem;
+    padding: 3rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: default;
+    text-align: center;
+}
+
+.skill i{
+    font-size: 8rem;
+    margin: 0 auto;
+}
+
+.skill h2{
+    font-size: 2rem;
+    font-weight: 550;
+    margin: 0.5rem 0;
+}
+
+.skill p{
+    font-size: 1rem;
+    font-weight: 200;
 }
