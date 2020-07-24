@@ -68,7 +68,7 @@ nav{
     align-items: center;
     justify-content: space-between;
     padding: 1rem 0;
-    border-bottom: 2px solid rgba(255,255,255,.2);
+    /* border-bottom: 2px solid rgba(255,255,255,.2); */
 }
 
 .line1{
@@ -157,6 +157,11 @@ nav{
     letter-spacing: 2px;
 }
 
+.nav-link i{
+    font-size: 1.5rem;
+    margin: 0.8rem;
+}
+
 .nav-link:hover{
     color: silver;
 }
@@ -193,7 +198,7 @@ nav{
 
 .landing-page{
     width: 100%;
-    height: 80vh;
+    height: 100vh;
     background-size: contain;
     position: relative;
 }
@@ -240,7 +245,7 @@ nav{
 
 .main h4{
     font-size: 1.5rem;
-    margin: 1rem 0;
+    margin: 1.5rem 0;
     font-weight: 500;
 }
 
@@ -287,7 +292,7 @@ nav{
 
 .aboutme{
     width: 100%;
-    min-height: 50vh;
+    min-height: 80vh;
     max-width: 70rem;
     margin: auto;
 }
@@ -296,6 +301,7 @@ nav{
     display: flex;
     align-items: center;
     text-align: center;
+    margin-bottom: 10rem;
 }
 
 .about-txt{
@@ -307,8 +313,10 @@ nav{
 .about-txt h2{
     text-transform: uppercase;
     font-size: 3rem;
-    margin-bottom: 2rem;
-    font-weight: 200;
+    margin-bottom: 2.5rem;
+    letter-spacing: 1rem;
+    font-size: 3rem;
+    font-weight: 500;
 }
 
 .about-txt p{
@@ -339,14 +347,17 @@ hr{
 }
 
 .title-head h2{
-    font-size: 3rem;
     text-transform: uppercase;
-    font-weight: 200;
-    margin: 1rem 0;
+    margin: 1rem 0 3rem 0;
+    letter-spacing: 1rem;
+    font-size: 3rem;
+    font-weight: 500;
 }
 
 .title-head p{
-    font-family: 'Sawarabi Gothic',sans-serif;
+    font-family: 'Sawarabi Gothic', sans-serif;
+    font-size: 1.2rem;
+    padding: 0;
     margin-bottom: 1rem;
 }
 
