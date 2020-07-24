@@ -190,5 +190,101 @@ nav{
 .jp{
     font-family: 'Sawarabi Gothic', sans-serif;
     font-size: 15px;
+    font-weight: 300;
     letter-spacing: 1.2px;
+}
+
+/* ランディングページ */
+
+.landing-page{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        135deg,
+        #79cdeb 0%,
+        #7fb0d5 100%
+    );
+}
+
+.main{
+    width: 100%;
+    max-width: 70rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.main h3{
+    letter-spacing: 1rem;
+    font-size: 2rem;
+    font-weight: 500;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 4s steps(25), blink 1s ease-in-out 7s infinite;
+    width: 25ch;
+    margin: auto;
+    border-right: 3px solid #f7f7f7;
+}
+
+@keyframes typing{
+    75%{
+        width: 0ch;
+    }
+    100%{
+        width: 25ch;
+    }
+}
+
+@keyframes blink{
+    from{
+        border-right: 3px solid #f7fafd;
+    }
+    to{
+        border-right: 3px solid #79cdeb;
+    }
+}
+
+.main h4{
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    font-weight: 500;
+}
+
+.main p{
+    text-transform: none;
+    font-size: 1.2rem;
+}
+
+.intro{
+    margin: 1rem auto;
+}
+
+.btn{
+    margin: 0;
+    background-color: #37beed;
+    border-radius: 2rem;
+    color: whitesmoke;
+    padding: 0.6rem 0.9rem;
+    display: inline-block;
+    margin-top: 1rem;
+    transition: background-color 300ms;
+    font-weight: 300;
+    letter-spacing: 0.2rem;
+}
+
+.btn:hover{
+
+    background-color: #3bccff;
+}
+
+.scroll-down i{
+    transition: color 600ms;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+
+.scroll-down i:hover{
+    color: #3bccff;
 }
