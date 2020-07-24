@@ -9,12 +9,16 @@
 }
 
 html{
-    font-family: 'Dosis', sans-serif;
+    font-family: 'Dosis','Sawarabi Gothic', sans-serif;
     font-size: 14px;
     box-sizing: border-box;
     scroll-behavior: smooth;
     color: #f7fafd;
-    background-color: #79cdeb;
+    background: linear-gradient(
+        135deg,
+        #79cdeb 0%,
+        #7fb0d5 100%
+    );
 }
 
 a{
@@ -107,7 +111,6 @@ nav{
     position: fixed;
     top: 0;
     right: 0;
-    background: #81d2f0;
     padding: 1.1rem;
     border-radius: 0% 0% 0% 40%;
 }
@@ -150,7 +153,6 @@ nav{
 .nav-link{
     opacity: 0;
     font-size: 1.3rem;
-    /* text-transform: uppercase; */
     color: #e4effb;
     letter-spacing: 2px;
 }
@@ -187,23 +189,13 @@ nav{
     }
 }
 
-.jp{
-    font-family: 'Sawarabi Gothic', sans-serif;
-    font-size: 15px;
-    font-weight: 300;
-    letter-spacing: 1.2px;
-}
-
 /* ランディングページ */
 
 .landing-page{
     width: 100%;
-    height: 100%;
-    background: linear-gradient(
-        135deg,
-        #79cdeb 0%,
-        #7fb0d5 100%
-    );
+    height: 80vh;
+    background-size: contain;
+    position: relative;
 }
 
 .main{
@@ -253,6 +245,8 @@ nav{
 }
 
 .main p{
+    font-weight: 300;
+    letter-spacing: 1.2px;
     text-transform: none;
     font-size: 1.2rem;
 }
@@ -265,7 +259,7 @@ nav{
     margin: 0;
     background-color: #37beed;
     border-radius: 2rem;
-    color: whitesmoke;
+    color: #f9fafa;
     padding: 0.6rem 0.9rem;
     display: inline-block;
     margin-top: 1rem;
@@ -276,7 +270,7 @@ nav{
 
 .btn:hover{
 
-    background-color: #3bccff;
+    background-color: #4dffff;
 }
 
 .scroll-down i{
@@ -286,5 +280,45 @@ nav{
 }
 
 .scroll-down i:hover{
-    color: #3bccff;
+    color: #4dffff;
+}
+
+/* AboutMeのところ */
+
+.aboutme{
+    width: 100%;
+    min-height: 100vh;
+    max-width: 70rem;
+    margin: auto;
+}
+
+.aboutme .container{
+    display: flex;
+    align-items: center;
+}
+
+.about-txt{
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+}
+
+.about-txt h2{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    font-weight: 200;
+}
+
+.about-txt p{
+    font-family: 'Sawarabi Gothic', sans-serif;
+    font-size: 1.2rem;
+    padding: 0;
+    margin-bottom: 1.2rem;
+}
+
+hr{
+    margin: 3rem 0;
+    background: #f7fafd;
+    border: 0;
+    height: 1px;
 }
