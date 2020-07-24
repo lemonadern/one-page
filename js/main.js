@@ -12,7 +12,6 @@ selectElement(".burger-icon").addEventListener("click", () => {
             link.style.animation = ""
         }else{
             link.style.animation = `navLinkAnimate 0.5s ease forwards ${ index/7 + 0.5}s`
-            console.log(index/7 + 0.5)
         }
     })
 });

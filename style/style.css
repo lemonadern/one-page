@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis&family=Sawarabi+Gothic&display=swap');*,
 
 *,
 *::before,
@@ -9,7 +9,7 @@
 }
 
 html{
-    font-family: "Dosis",monospace;
+    font-family: 'Dosis', sans-serif;
     font-size: 14px;
     box-sizing: border-box;
     scroll-behavior: smooth;
@@ -185,4 +185,10 @@ nav{
         opacity: 1;
         transform: translate(0px);
     }
+}
+
+.jp{
+    font-family: 'Sawarabi Gothic', sans-serif;
+    font-size: 15px;
+    letter-spacing: 1.2px;
 }
