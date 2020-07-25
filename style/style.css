@@ -219,29 +219,11 @@ nav{
     font-weight: 500;
     overflow: hidden;
     white-space: nowrap;
-    animation: typing 4s steps(25), blink 1s ease-in-out 7s infinite;
     width: 25ch;
     margin: auto;
-    border-right: 3px solid #f7f7f7;
 }
 
-@keyframes typing{
-    75%{
-        width: 0ch;
-    }
-    100%{
-        width: 25ch;
-    }
-}
 
-@keyframes blink{
-    from{
-        border-right: 3px solid #f7fafd;
-    }
-    to{
-        border-right: 3px solid #79cdeb;
-    }
-}
 
 .main h4{
     font-size: 1.5rem;
@@ -392,4 +374,44 @@ hr{
 .skill p{
     font-size: 1rem;
     font-weight: 200;
+}
+
+/* プロジェクト */
+
+.projects{
+    padding: 2rem 0;
+    min-height: 50vh;
+    max-width: 80rem;
+    margin: auto;
+}
+
+.projects p{
+    letter-spacing: 0.2rem;
+    font-size: 1rem;
+    font-weight: 500;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 26ch;
+    margin: auto;
+    border-right: 3px solid #f7f7f7;
+
+    animation: typing 4s steps(20), blink 1s ease-in-out 4s infinite;
+}
+
+@keyframes typing{
+    75%{
+        width: 0ch;
+    }
+    100%{
+        width: 25ch;
+    }
+}
+
+@keyframes blink{
+    from{
+        border-right: 3px solid #f7fafd;
+    }
+    to{
+        border-right: 3px solid #79cdeb;
+    }
 }
