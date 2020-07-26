@@ -30,3 +30,14 @@ navLinks.forEach(link => {
         })    
     })
 })
+
+$(window).scroll(function(){
+    var top = $("#elem").offset().top; // ターゲットの位置取得
+    var position = top - $(window).height();  // 発火させたい位置
+    if($(window).scrollTop() > position){
+      $("#elem").addClass("act");
+    }else{
+      // それ以外の動き
+    }
+})
+
