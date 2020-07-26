@@ -205,7 +205,7 @@ nav{
 
 .main{
     width: 100%;
-    max-width: 70rem;
+    max-width: 80rem;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -275,7 +275,7 @@ nav{
 .aboutme{
     width: 100%;
     min-height: 80vh;
-    max-width: 70rem;
+    max-width: 80rem;
     margin: auto;
 }
 
@@ -318,9 +318,9 @@ hr{
 
 /* skills part */
 
-.learning-skills{
+.learning{
     padding: 2rem 0;
-    max-width: 90rem;
+    max-width: 80rem;
     margin: auto;
 }
 
@@ -421,7 +421,7 @@ hr{
 .contactme{
     width: 100%;
     min-height: 30vh;
-    max-width: 70rem;
+    max-width: 80rem;
     margin: auto;
 }
 
