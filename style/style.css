@@ -34,12 +34,6 @@ p{
     font-size: 1.3em;
 }
 
-img{
-    width:100%;
-    max-width: 100%;
-    height: auto;
-}
-
 /* ヘッダーのスタイリング */
 
 header{
@@ -124,6 +118,7 @@ nav{
 }
 
 .caption{
+    margin-top: 4rem;
     display: block;
 }
 
